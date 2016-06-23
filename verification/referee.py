@@ -12,5 +12,8 @@ api.add_listener(
                        'python-3': unwrap_args,
                        'js-node':  js_unwrap_args
                    },
-                   function_name='find_distance'
+        function_name={
+            "python": "find_distance",
+            "js": "findDistance"
+        }
     ).on_ready)

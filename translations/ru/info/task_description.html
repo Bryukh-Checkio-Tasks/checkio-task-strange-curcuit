@@ -13,12 +13,11 @@
     Для примера, расстояние между ячейками 1 и 9 -- два и расстояние между 24 и 9 -- один.
 </p>
 
+
+
 <img class="for_info_only"
-     width="400px"
-     src="{{ MEDIA }}spiral-square.png"/>
-<img class="for_editor_only"
-     width="380px"
-     src="{{ MEDIA }}spiral-square.png"/>
+     src="{{ MEDIA }}spiral-square.png"
+     style="max-height: 265px"/>
 
 <p>
     <strong>Вх. данные</strong>: Две метки ячеек, как целочисленные (int).
@@ -33,10 +32,17 @@
         <strong>Примеры:</strong>
     </p>
 
-<pre class="brush: python">find_distance(1, 9) == 2
+<pre class="brush: python">{% if interpreter.slug == "js-node" %}
+findDistance(1, 9) == 2
+findDistance(9, 1) == 2
+findDistance(10, 25) == 1
+findDistance(5, 9) == 4
+{% else %}
+find_distance(1, 9) == 2
 find_distance(9, 1) == 2
 find_distance(10, 25) == 1
 find_distance(5, 9) == 4
+{% endif %}
 </pre>
 </div>
 
