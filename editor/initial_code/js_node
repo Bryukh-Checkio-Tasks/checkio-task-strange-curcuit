@@ -12,6 +12,6 @@ if (!global.is_checking) {
     assert.equal(findDistance(10, 25), 1, "3rd example");
     assert.equal(findDistance(5, 9), 4, "4th example");
     assert.equal(findDistance(26, 31), 5, "5th example");
-    assert.equal(findDistance(50, 61), 10, "6th example");
+    assert.equal(findDistance(50, 16), 10, "6th example");
     console.log("Coding complete? Click 'Check' to review your tests and earn cool rewards!");
 }
