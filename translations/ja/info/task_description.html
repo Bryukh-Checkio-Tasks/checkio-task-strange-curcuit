@@ -1,0 +1,58 @@
+﻿<div class="for_info_only" style="text-align: center">
+    <img src="{{MEDIA}}title.png" style="max-height: 400px">
+</div>
+<p>
+    ニコラは奇妙な回路基盤を拾った。
+    それは可能な限り全ての要素がらせん状に縦横でつながっていた。
+</p>
+
+<p>
+    この回路基盤は正方形のマスでできている。最初の要素は中央の1であり、
+    あとは昇順に時計回りでらせん状に続いている。
+    あなたはこの図上で隣接したマスを上下左右に移動可能なので
+    ニコラが2点間のマンハッタン距離を数えるのを手伝うことができる。
+    例えば1と9の間は2で、24と9の間は1である。
+</p>
+
+<img class="for_info_only"
+     src="{{ MEDIA }}spiral-square.png"
+     style="max-height: 265px"/>
+
+<p><strong>入力</strong>: 2つのマスの数値 (integer型)</p>
+
+<p><strong>出力</strong>: 2マス間のマンハッタン距離 (integer型)</p>
+
+<div class="for_info_only">
+    <p>
+        <strong>例:</strong>
+    </p>
+
+<pre class="brush: python">{% if interpreter.slug == "js-node" %}
+findDistance(1, 9) == 2
+findDistance(9, 1) == 2
+findDistance(10, 25) == 1
+findDistance(5, 9) == 4
+{% else %}
+find_distance(1, 9) == 2
+find_distance(9, 1) == 2
+find_distance(10, 25) == 1
+find_distance(5, 9) == 4
+{% endif %}
+</pre>
+</div>
+
+<p class="for_info_only">
+    <strong>どのように使われるか: </strong>
+    このタスクは一般的でない座標系を調査するのに役立つ。
+    この座標系は地形学で時々使用される。
+    またこのタスクはウラムの螺旋(素数螺旋)と関係がある。
+    ウラムの螺旋はシンプルな素数の可視化手法であり、
+    ある二次方程式が非常に多くの素数を生成する傾向があるのをを明らかにした。
+</p>
+
+<p>
+    <strong>事前条件: </strong>
+    0 < first < 1000<br>
+    0 < second < 1000<br>
+    first != second
+</p>
